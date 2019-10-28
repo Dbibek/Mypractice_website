@@ -1,0 +1,35 @@
+
+
+
+body{ margin:0px; }
+
+.fc > * {
+    margin:10px;
+    padding:0px; 
+    background-color:rgb(213, 216, 220);
+   
+}
+
+/* initialize flexbox container and flexbox items */
+.fc { 
+    display:flex;
+    flex-flow: row wrap;
+}
+.fc > * { 
+    padding: 10px;
+    flex: 1; 
+    font-size:15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+}
+
+/* header and footer should be full width */
+.fc header,
+.fc footer {
+    margin:0px;
+    flex: 0 1 100vw; 
+}
+
+/* ensure flex-container is always at least as tall as the viewport. 
+   Keeps footer from coming up*/
+.fc { min-height: 60vh; } 
